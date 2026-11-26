@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "monitor.play",
+  "name": "Monitor Play",
+  "version": "1.2.0",
+  "author": "Shubharthak Sangharsha",
+  "license": "MIT",
+  "description": "Arrange screens, pick resolution and refresh, and expose a JSON API for agents.",
+  "kinds": ["overlay"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "overlay": "Arrange.qml"
+  }
+}

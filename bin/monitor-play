@@ -1,0 +1,11 @@
+#!/bin/bash
+# Open the layout UI, or run the JSON API used by an agent.
+#   monitor-play
+#   monitor-play api tools
+#   monitor-play api get
+#   monitor-play api set '{"screens":[{"name":"HDMI-A-1","refresh":100}]}'
+APP_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
+if [[ $# -eq 0 ]]; then
+  exec omarchy-shell shell summon monitor.play '{}'
+fi
+exec python3 "$APP_DIR/monitor_play.py" "$@"
