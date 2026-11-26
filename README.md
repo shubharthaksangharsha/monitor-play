@@ -5,6 +5,8 @@ Drag the screens, pick a resolution and refresh rate, and apply. The same
 settings are a JSON API, so an agent can read and change the layout without
 opening the window.
 
+![Monitor Play over the desktop](docs/ui.jpg)
+
 Each mode is marked with what it does on that panel:
 
 - **sharp** — the panel's real pixels
